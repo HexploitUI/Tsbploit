@@ -55,7 +55,7 @@ local function teleportToBehindLockedPlayer()
         local targetLookVector = targetHRP.CFrame.LookVector
 
         -- Calculate the position 2 studs behind the target
-        local behindPosition = targetPosition - (targetLookVector * 2)
+        local behindPosition = targetPosition - (targetLookVector * 3)
 
         -- Set your character's position and make it face the target
         character.HumanoidRootPart.CFrame = CFrame.new(behindPosition, targetPosition)
